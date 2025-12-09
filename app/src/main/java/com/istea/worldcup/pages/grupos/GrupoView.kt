@@ -45,7 +45,8 @@ fun GruposView(
         ) {
             BackgroundImage()
             when (state) {
-                GruposState.Cargando -> Text("Cargando...")
+                GruposState.Cargando -> Cargando()
+
                 is GruposState.Resultado -> GroupsList(grupos = state.grupos){
                     onAction(OnGrupoClick(it))
                 }
