@@ -83,7 +83,7 @@ fun GroupCardView(
     ) {
         Column(modifier = Modifier.padding(16.dp)) {
             Text(
-                text = "grupo.name",
+                text = grupo.name,
                 style = MaterialTheme.typography.titleLarge,
                 modifier = Modifier.fillMaxWidth(),
                 textAlign = TextAlign.Center
@@ -106,7 +106,7 @@ fun GroupCardView(
 @Composable
 fun BackgroundImage() {
     Image(
-        painter = painterResource(R.drawable.logo),
+        painter = painterResource(R.drawable.logo_viejo),
         contentDescription = null,
         contentScale = ContentScale.Crop,
         modifier = Modifier
